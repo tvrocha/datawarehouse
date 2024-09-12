@@ -23,6 +23,7 @@ for _ in range(100):
 
 # Create DataFrame
 df = pd.DataFrame(data, columns=['Email do Vendedor', 'Data da Compra', 'Hora da Compra', 'Valor da Compra', 'Unidades Vendidas', 'Origem do Produto'])
+df.to_excel('EmailsFake.xlsx', index=False)
 
 # Show the table
 print(df.head())
